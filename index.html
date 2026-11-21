@@ -195,14 +195,14 @@
           <div class="project-top">
             <span class="project-tag">Computer Vision</span>
           </div>
-          <h3>Arabic Handwritten Letters Classification</h3>
-          <p>CNN-based classifier for Arabic handwriting, improved from 91.35% to 96% accuracy via transfer learning.</p>
+          <h3>Arabic Handwritten Letter Classification</h3>
+          <p>Kaggle competition: 94.9% accuracy across 65 Arabic letter-form classes on writers the model had never seen.</p>
           <ul class="project-points">
-            <li>ResNet50 transfer learning + data augmentation for handwriting variation</li>
-            <li>Feature visualization for interpretability</li>
+            <li>Split 42.5k images by writer, not by image, so memorised handwriting couldn't inflate the score</li>
+            <li>Padded to square instead of stretching, and no horizontal flips, which turn one Arabic letter into another</li>
           </ul>
           <div class="project-stack">
-            <span>TensorFlow</span><span>Keras</span><span>ResNet50</span>
+            <span>PyTorch</span><span>EfficientNet-B2</span>
           </div>
         </article>
 
